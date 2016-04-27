@@ -1,0 +1,17 @@
+.jumbotron {
+  padding-top: 90px;
+  min-height: 400px;
+  margin-bottom: 0;
+  background-image: url('images/CairoPic.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.blogs ul{
+  list-style-type: none;
+}
+
+#Social {
+  background-color: rgba(153, 0, 0, 0.9);
+}
+

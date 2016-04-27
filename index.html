@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>MK Travel Blog</title>
+  	<meta name = "viewport" content = "width=devicewidth,initialscale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+		<link href = "../bootstrap_exercise-master/dist/css/bootstrap.css" rel = "stylesheet">
+	<link href = "mainCSS.css" rel = "stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="../bootstrap_exercise-master/dist/js/bootstrap.js"></script>
+
+	<script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  		ga('create', 'UA-76842026-1', 'auto');
+  		ga('send', 'pageview');
+	</script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+	 	<div class="container-fluid">
+	    	<div class="navbar-header">
+	      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        		<span class="icon-bar"></span>
+	        		<span class="icon-bar"></span>
+	        		<span class="icon-bar"></span> 
+	      		</button>
+	      		<a id="webName" class="navbar-brand" href="#">MK Travel Blog</a>
+	    	</div>
+	    	<div class="collapse navbar-collapse" id="myNavbar">
+	    		<ul class="nav navbar-nav">
+	        		<li class="active"><a href="index.html"><span id="Home" class="glyphicon glyphicon-home">Home</span></a></li>
+	        		<li class="dropdown">
+	        			<a id="Dest" class="dropdown-toggle" data-toggle="dropdown" href="#">Destinations<span class="caret"></span></a>
+	        			<ul class="dropdown-menu">
+	        				<li><a href="Cairo.html">Cairo, Egypt</a></li>
+	        				<li><a href="#">Hurgarda, Egypt</a></li>
+	        				<li><a href="#">Chicago</a></li>
+	        				<li><a href="#">Philadelphia</a></li>
+	        			</ul>
+	        		</li>
+	      		</ul>
+	      		<ul class="nav navbar-nav navbar-right">
+	        		<li><a href="#">About</a></li>
+	        		<li><a href="#"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+	     		</ul>
+	    	</div>
+	 	</div>
+	 </nav>
+
+
+	<div class='jumbotron'>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1><strong>Venture Out. <br>Meet New Cultures. <br>YOLO.</strong></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="latestBlogs" class="text-center">
+		<div class="container">
+			<h2>Latest Blog Posts</h2>
+			<div class="row">
+				<div class="col-sm-4 blogs">
+					<img src='images/LatestBlogs-Philly.jpg' class="center-block blogPic">
+					<h3>Philadelphia</h3>
+					<blockquote>
+						<p>The city of Brotherly Love held up to it's name. Filled with friendly and vibrant people who turn the city electric when their sports teams come to town. Never experience a dull moment as there are numerous landmarks to visit. <br><br></p>
+					</blockquote>
+					<button id="PhillyRead" class="readMore">Read More</button>
+				</div>
+				<div class="col-sm-4 blogs">
+					<img src='images/LatestBlogs-Cairo.jpg' class="center-block blogPic">
+					<h3>Cairo</h3>
+					<blockquote>
+						<p>A city rich in history, artifacts and epic monuments. There was so much to see, do and eat that a week was too short. Surrounded by desert, the scenery is both amazing and unique. A visit to the well-known Khan-el-Khalili market will leave you mesmerised.<br><br></p>
+					</blockquote>
+					<button id="CairoRead" class="readMore">Read More</button>
+				</div>
+				<div class="col-sm-4 blogs">
+					<img src='images/LatestBlogs-Hurghada.jpg' class="center-block blogPic">
+					<h3>Hurghada</h3>
+					<blockquote>
+						<p>Most adventurous holiday I have experienced thus far. So close to the red sea, this is a destination for divers and water sports enthusiasts. There is also the desert which gives the opportunity to gear up the quadbikes and take rides on camels and horses.</p>
+					</blockquote>
+					<button id="HurghadaRead" class="readMore">Read More</button>
+				</div>
+			</div> 
+		</div>
+	</div>
+
+  	<div id="Social" class="text-center">
+  		<div class="container">
+    		<h2>Get Connected</h2>
+    		<p class="lead">Share your experiences and feedback! Follow me on Twitter, FaceBook and Pinterest.</p>
+
+    		<div id='social-buttons'>
+      			<button class='btn btn-lg btn-twitter'>Twitter</button>
+      			<button class='btn btn-lg btn-facebook'>Facebook</button>
+      			<button class='btn btn-lg btn-pinterest'>Pinterest</button>
+    		</div>
+    	</div>
+  	</div>
+
+  <script>
+
+    $("#CairoRead").on("click", function() {
+    	location.href = 'Cairo.html';
+    });
+
+  </script>
+
+</body>
+
+</html>
+

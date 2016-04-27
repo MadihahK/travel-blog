@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>About</title>
+  	<meta name = "viewport" content = "width=devicewidth,initialscale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+		<link href = "../bootstrap_exercise-master/dist/css/bootstrap.css" rel = "stylesheet">
+	<link href = "mainCSS.css" rel = "stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="../bootstrap_exercise-master/dist/js/bootstrap.js"></script>
+
+	<script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  		ga('create', 'UA-76842026-1', 'auto');
+  		ga('send', 'pageview');
+	</script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+	 	<div class="container-fluid">
+	    	<div class="navbar-header">
+	      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        		<span class="icon-bar"></span>
+	        		<span class="icon-bar"></span>
+	        		<span class="icon-bar"></span> 
+	      		</button>
+	      		<a id="webName" class="navbar-brand" href="#">MK Travel Blog</a>
+	    	</div>
+	    	<div class="collapse navbar-collapse" id="myNavbar">
+	    		<ul class="nav navbar-nav">
+	        		<li class="active"><a href="index.html"><span id="Home" class="glyphicon glyphicon-home">Home</span></a></li>
+	        		<li class="dropdown">
+	        			<a id="Dest" class="dropdown-toggle" data-toggle="dropdown" href="#">Destinations<span class="caret"></span></a>
+	        			<ul class="dropdown-menu">
+	        				<li><a href="Cairo.html">Cairo, Egypt</a></li>
+	        				<li><a href="#">Hurgarda, Egypt</a></li>
+	        				<li><a href="#">Chicago</a></li>
+	        				<li><a href="#">Philadelphia</a></li>
+	        			</ul>
+	        		</li>
+	      		</ul>
+	      		<ul class="nav navbar-nav navbar-right">
+	        		<li><a href="#">About</a></li>
+	        		<li><a href="#"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+	     		</ul>
+	    	</div>
+	 	</div>
+	 </nav>
+
+
+	<div class='jumbotron'>
+		<div class="container">
+		</div>
+	</div>
+
+	<div id="latestBlogs" class="text-center">
+		<div class="container">
+			<h2>About Me</h2>
+			<div class="row">
+				<div class="col-sm-2 blogs">
+				</div>
+				<div class="col-sm-8 blogs">
+					<img src='images/AboutBlog.jpg' class="center-block blogPic">
+					<blockquote>
+						<p>HelloOo! My name is Madihah and I've recently caught the travel bug. It's going to be a non-stop ride which I hopefully doesn't have a stop.</p>
+					</blockquote>
+				</div>
+				<div class="col-sm-2 blogs">
+				</div>
+			</div> 
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12 blogs">
+        <form role='form' class='form-inline'>
+        	<div class="form-group">
+        		<label for="email">Find out more</label>
+         		<input type="text" class='form-control' name="email" placeholder="Enter your email" >
+          		<button type="submit" class='btn btn-success'>Send</button>
+        	</div>
+        </form>
+        </div>
+        </div>
+
+
+  <script>
+
+    $("#CairoRead").on("click", function() {
+    	location.href = 'Cairo.html';
+    });
+
+  </script>
+
+</body>
+
+</html>
+
